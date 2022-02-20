@@ -3,7 +3,8 @@ import logger from './loggerService';
 import { toast } from 'react-toastify';
 
 
-
+axios.defaults.baseURL = process.env.REACT_APP_API_URL;
+ 
 // Intercept unexpected errors
 axios.interceptors.response.use( 
   function (response) {

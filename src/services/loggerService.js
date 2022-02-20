@@ -16,5 +16,7 @@ function log(msg){
   Sentry.captureException(msg);
 }
 
-export default { init, log }
+const logger = { init, log };
+
+export default logger;
 
